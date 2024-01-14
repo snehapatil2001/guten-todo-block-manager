@@ -23,7 +23,10 @@ export default function Edit() {
 			{todos && (
 				<ul>
 					{todos.map((todo) => (
-						<li key={todo.id}>
+						<li
+							key={todo.id}
+							className={todo.completed && 'todo-completed'}
+						>
 							<CheckboxControl
 								label={todo.title}
 								checked={todo.completed}
