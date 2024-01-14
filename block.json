@@ -1,0 +1,22 @@
+{
+	"apiVersion": 2,
+	"name": "blocks-todo/datastore",
+	"title": "Todo list",
+	"category": "widgets",
+	"icon": "database",
+	"description": "Todo list",
+	"keywords": ["text", "paragraph", "box"],
+	"supports": {
+		"html": false,
+		"spacing": {
+			"padding": true
+		}
+	},
+	"textdomain": "todo-list",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"attributes": {
+		
+	}
+}
