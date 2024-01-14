@@ -1,7 +1,7 @@
 {
 	"apiVersion": 2,
-	"name": "blocks-todo/datastore",
-	"title": "Todo list",
+	"name": "blocks-todo/info",
+	"title": "Todo list info",
 	"category": "widgets",
 	"icon": "database",
 	"description": "Todo list",
@@ -13,8 +13,8 @@
 		}
 	},
 	"textdomain": "todo-list",
-	"editorScript": "file:./build/index.js",
-	"editorStyle": "file:./build/index.css",
-	"style": "file:./build/style-index.css",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
 	"attributes": {}
 }

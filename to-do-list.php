@@ -14,6 +14,13 @@
  */
 
 function blocks_todo_list_init() {
-	register_block_type_from_metadata( __DIR__ );
+    register_block_type(
+        __DIR__ . '/build/list-datastore',
+        array()
+    );
+    register_block_type(
+        __DIR__ . '/build/list-info',
+        array()
+    );
 }
 add_action( 'init', 'blocks_todo_list_init' );
