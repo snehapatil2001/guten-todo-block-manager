@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"author": "Sneha Patil",
 	"license": "GPL-2.0-or-later",
-	"main": "index.js",
+	"main": "build/index.js",
 	"scripts": {
 		"build": "wp-scripts build",
 		"format": "wp-scripts format && stylelint \"**/*.scss\" --fix",

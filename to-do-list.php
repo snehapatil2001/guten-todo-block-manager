@@ -14,10 +14,7 @@
  */
 
 function blocks_todo_list_init() {
-    register_block_type(
-        __DIR__ . '/build/list-datastore',
-        array()
-    );
+
     register_block_type(
         __DIR__ . '/build/list-info',
         array()
