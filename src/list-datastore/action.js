@@ -1,4 +1,4 @@
-import { ADD_TODO } from "./types" 
+import { ADD_TODO, POPULAR_TODOS } from "./types"
 
 // Action creators.
 export const addTodo = (todo) => {
@@ -6,5 +6,12 @@ export const addTodo = (todo) => {
     return {
         type: ADD_TODO,
         todo,  
+    }
+}
+
+export const populateTodos = (todos) => {
+    return {
+        type: POPULATE_TODOS,
+        todos,
     }
 }
