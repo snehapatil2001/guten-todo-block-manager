@@ -1,14 +1,19 @@
-import { __ } from '@wordpress/i18n';
-import { RawHTML } from '@wordpress/element';
-import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, SelectControl, TextControl, ToggleControl } from '@wordpress/components';
-import { useSelect } from '@wordpress/data';
-import './editor.scss';
+import { useBlockProps } from '@wordpress/block-editor';
+import { useSelect, useDispatch } from '@wordpress/data';
 
 export default function Edit() {
-    return (
-        <div {...useBlockProps()}>
-            <h2>{wp.data.select('core/editor').getEditedPostAttribute('title')}</h2>
-        </div>
-    );
+	const title = useSelect((select) => {
+		return select('core/editor').getEditedPostAttribute('title');
+	});
+    const {editPost} = useDispatch('core/editor');
+	return (
+		<div {...useBlockProps()}>
+			<h2>{title}</h2>
+			<input
+				value={title}
+				onChange={(e) => editPost({ title: e.target.value })
+				}
+			/>
+		</div>
+	);
 }
