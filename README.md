@@ -66,3 +66,8 @@ The block supports translation with the usage of the `__` function for text loca
 Ensure the plugin is activated through the 'Plugins' screen in WordPress.
 
 **Note:** If the to-do list is not visible in the editor, make sure the plugin is activated, and there are no JavaScript errors in the browser console.
+
+
+### Ouput 
+
+![Screenshot](./assets/img/output.png)
