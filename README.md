@@ -10,6 +10,10 @@ A simple Gutenberg block to manage your to-do list. This block allows users to a
 - Toggle completion status of existing to-do items.
 - Easy-to-use interface within the Gutenberg editor.
 
+## API Integration
+
+This plugin utilizes the [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos) API for managing to-do items. The API provides a simple and mock data source for testing and development purposes.
+
 ## Installation
 
 1. Upload the plugin files to the `/wp-content/plugins/to-do-list` directory.
